@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #202124;
+    height: 100%;
+}
+
+#main {
+    width: 840px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #323639;
+    height: 100%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24), 0, 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    border: 1px solid #4CAF50;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 -1px;
+    background-color: #282C2F;
+    height:120px;
+}
+
+#header {
+    margin: 0 0 5px;
+}
+
+#prompt, #answer {
+    padding: 40px 10px;
+    margin: 0;
+    height: 100%;
+}
+
+#prompt.jp, #answer.jp {
+    padding-top: 25px;
+}
+
+#prompt.eng, #answer.eng {
+    padding-top: 40px;
+}
+
+#count {
+    margin: 5px 0 15px;
+}
+
+#next {
+    margin-left: 3px;
+}
+
+#previous {
+    margin-right: 2px;
+}
+
+#categories {
+    margin-top: 10px;
+}
+
+.category {
+    display: inline-block;
+    width: 149px;
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+.category:hover {
+    border: 1px solid #388D3A;
+    background-color: #388D3A;
+}
+
+.intermediate {
+    border: 1px solid #008CBA;
+    background-color: #008CBA;
+}
+
+.intermediate:hover {
+    border: 1px solid #007095;
+    background-color: #007095;
+}
+
+.advanced {
+    border: 1px solid #993399;
+    background-color: #993399;
+}
+
+.advanced:hover {
+    border: 1px solid #660066;
+    background-color: #660066;
+}
+
+.inactive {
+    border: 1px solid #202124;
+    background-color: #282C2F;
+}
+
+.inactive:hover {
+    border: 1px solid #202124;
+    background-color: #3c3d41;
+}
+
+.spoiler {
+    opacity: 0;
+    transition: all .25s;
+}
+
+.spoiler:hover {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+#beginner {
+    border: 1px solid #4CAF50;
+    padding: 5px 0 10px;
+    margin-bottom: 10px;
+}
+
+#intermediate {
+    border: 1px solid #008CBA;
+    padding: 5px 0 10px;
+    margin-bottom: 10px;
+}
+
+#advanced {
+    border: 1px solid #993399;
+    padding: 5px 0 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin: 5px 5px 10px;
+    padding: 0;
+}
+
+button {
+    padding: 6px;
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 395px;
+}
+
+button:hover {
+    background-color: #007095;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24) 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#japanese, #english {
+    display: inline-block;
+    width: 149px;
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+    margin: 10px -2px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+#japanese.inactive, #english.inactive {
+    border: 1px solid #202124;
+    background-color: #282C2F;
+}
+
+#japanese.inactive:hover, #english.inactive:hover {
+    border: 1px solid #202124;
+    background-color: #3c3d41;
+}
