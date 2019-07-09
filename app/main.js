@@ -6,9 +6,12 @@ define(function (require) {
     var japaneseFirst = false;
 
     // Beginner
-    vocab['greetings'] = { on: true, level: 'beginner', words: require('./vocab/greetings')}
-    vocab['shopping'] = { on: true, level: 'beginner', words: require('./vocab/shopping')}
-    vocab['numbers'] = { on: true, level: 'beginner', words: require('./vocab/numbers')}
+    vocab['greetings'] = { on: false, level: 'beginner', words: require('./vocab/greetings')}
+    vocab['shopping'] = { on: false, level: 'beginner', words: require('./vocab/shopping')}
+    vocab['numbers'] = { on: false, level: 'beginner', words: require('./vocab/numbers')}
+    vocab['counters'] = { on: true, level: 'beginner', words: require('./vocab/counters')}
+    vocab['time'] = { on: true, level: 'beginner', words: require('./vocab/time')}
+
     vocab['other'] = { on: true, level: 'beginner', words: require('./vocab/other')}
 
     // Intermediate
@@ -89,6 +92,11 @@ define(function (require) {
         }
 
         var newCategory = document.getElementById(name)
+
+        if(!vocab[name].on) {
+            newCategory.classList.add('inactive')
+        }
+
         newCategory.addEventListener('click', event => {
             vocab[event.target.id].on = !vocab[event.target.id].on
             event.target.classList.toggle('inactive')
