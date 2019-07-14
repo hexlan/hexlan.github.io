@@ -13,6 +13,8 @@ define(function () {
         { romaji: "Koko ____", kana: "ここ", english: "Here" },
         { romaji: "Soko ____", kana: "そこ", english: "There (Close by)" },
         { romaji: "Asoko ____", kana: "あそこ", english: "There (Far away)" },
-        { romaji: "Doko ____", kana: "どこ", english: "Where?" }
+        { romaji: "Doko ____", kana: "どこ", english: "Where?" },
+        { romaji: "____ wa doko desuka?", kana: "____はどこですか？", english: "Where is the ____?" },
+        { romaji: "____ wa doko ni arimasuka?", kana: "____はどこにありますか？", english: "Where is the/is there a ____?" }
     ]
 })

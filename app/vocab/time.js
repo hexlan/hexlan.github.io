@@ -10,14 +10,6 @@ define(function () {
         { romaji: "Gozen", kana: "ごぜん", english: "A.M." },
         { romaji: "Gogo", kana: "ごご", english: "P.M." },
         { romaji: "Shogo", kana: "しょうご", english: "Noon" },
-        { romaji: "Yobi", kana: "ようび", english: "Day of week" },
-        { romaji: "Nichiyobi", kana: "にちようび", english: "Sunday" },
-        { romaji: "Getsuyobi", kana: "げつようび", english: "Monday" },
-        { romaji: "Kayobi", kana: "かようび", english: "Tuesday" },
-        { romaji: "Suiyobi", kana: "すいようび", english: "Wednesday" },
-        { romaji: "Mokuyobi", kana: "もくようび", english: "Thursday" },
-        { romaji: "Kinyobi", kana: "きんようび", english: "Friday" },
-        { romaji: "Doyobi", kana: "どようび", english: "Saturday" },
         { romaji: "Tsuki", kana: "つき", english: "Month" }
     ]
 })

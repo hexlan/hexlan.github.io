@@ -9,8 +9,11 @@ define(function (require) {
     vocab['greetings'] = { on: false, level: 'beginner', words: require('./vocab/greetings')}
     vocab['shopping'] = { on: false, level: 'beginner', words: require('./vocab/shopping')}
     vocab['numbers'] = { on: false, level: 'beginner', words: require('./vocab/numbers')}
-    vocab['counters'] = { on: true, level: 'beginner', words: require('./vocab/counters')}
-    vocab['time'] = { on: true, level: 'beginner', words: require('./vocab/time')}
+    vocab['counters'] = { on: false, level: 'beginner', words: require('./vocab/counters')}
+    vocab['time'] = { on: false, level: 'beginner', words: require('./vocab/time')}
+    vocab['days'] = { on: true, level: 'beginner', words: require('./vocab/days')}
+    vocab['directions'] = { on: true, level: 'beginner', words: require('./vocab/directions')}
+    vocab['places'] = { on: true, level: 'beginner', words: require('./vocab/places')}
 
     vocab['other'] = { on: true, level: 'beginner', words: require('./vocab/other')}
 
